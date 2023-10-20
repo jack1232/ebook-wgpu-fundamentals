@@ -1,0 +1,59 @@
+[package]
+name = "wgpu_fundamentals"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+wgpu = "0.17.1"
+cgmath = "0.18"
+env_logger = "0.10"
+futures = "0.3"
+gfx-hal = "0.9"
+image = "0.23"
+log = "0.4"
+pollster = "0.2"
+winit = "0.28" 
+anyhow = "1.0"
+rand = "0.8"
+bytemuck = { version = "1.13", features = ["derive"] }
+wgpu_simplified = { git = "https://github.com/jack1232/wgpu_simplified" }
+
+[[example]]
+name = "wgpu_info"
+path = "examples/ch01/wgpu_info.rs"
+
+[[example]]
+name = "triangle_vertex_color"
+path = "examples/ch02/triangle_vertex_color.rs"
+
+[[example]]
+name = "triangle_primitive"
+path = "examples/ch02/triangle_primitive.rs"
+
+[[example]]
+name = "triangle_gpu_buffer"
+path = "examples/ch02/triangle_gpu_buffer.rs"
+
+[[example]]
+name = "line_msaa"
+path = "examples/ch02/line_msaa.rs"
+
+[[example]]
+name = "cube_rotation"
+path = "examples/ch03/cube_rotation.rs"
+
+[[example]]
+name = "cube_wireframe"
+path = "examples/ch03/cube_wireframe.rs"
+
+[[example]]
+name = "sphere_wireframe"
+path = "examples/ch03/sphere_wireframe.rs"
+
+[[example]]
+name = "cylinder_wireframe"
+path = "examples/ch03/cylinder_wireframe.rs"
+
+[[example]]
+name = "torus_wireframe"
+path = "examples/ch03/torus_wireframe.rs"
